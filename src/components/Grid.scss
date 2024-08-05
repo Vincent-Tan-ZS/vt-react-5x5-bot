@@ -1,0 +1,35 @@
+// Variables
+$grid-size: 80px;
+$grid-border: 1px solid black;
+
+$entity-size: calc($grid-size - 10px);
+
+.entity {
+    width: $entity-size;
+    height: $entity-size;
+}
+
+.entity-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    place-self: center;
+    
+    .grid-item {
+        display: flex;
+        border: $grid-border;
+        width: $grid-size;
+        height: $grid-size;
+        align-items: center;
+        justify-content: center;
+
+        .player {
+            background-image: url("../../public/assets/Robot.png");
+            @extend .entity-img;
+            @extend .entity;
+        }
+    }
+}

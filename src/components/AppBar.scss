@@ -1,0 +1,22 @@
+.appbar {
+    background: white;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 2rem;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        text-decoration: underline;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+}
